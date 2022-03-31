@@ -49,7 +49,7 @@
                 </q-rating>
                 
             </div>
-            <template v-if="$q.screen.width >= 1440">
+            <template v-if="q.screen.width >= 1440">
                 <q-scroll-area class="scrroll q-mt-md">
                     <div v-show="getComic.transcript" class="col-12 ">      
                         <p class="q-mt-lg custom-size"><strong>Description </strong></p>
@@ -62,7 +62,7 @@
     <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12 q-px-sm">
         <p class="col-12 bg-blue-grey-3 text-center size"> {{getComic.title}}</p>
         <div class="col-12 center"><img class="custom-width-img" :src="getComic.img" :alt="getComic.alt" /></div>
-        <template v-if="$q.screen.width < 1440">
+        <template v-if="q.screen.width < 1440">
             <p v-show="getComic.transcript" class="col-12 q-mt-lg custom-size "><strong>Description </strong></p>
             <p v-show="getComic.transcript" class="col-12"> {{getComic.transcript}}</p>
         </template>
@@ -82,12 +82,11 @@ export default {
   
     const {getComicData,changeRatingValue,getComic} = useComic();
 
-    const $q = useQuasar()
+    const q = useQuasar()
 
     const numbComic = ref(1)
     const numbRandom = ref(1)
     const ratingModel = ref(0)
-    const pantalla = ref($q.screen.width)
 
     onMounted ( 
         () => getComicData()
@@ -110,7 +109,7 @@ export default {
     }
     
     return {
-        $q,
+        q,
         numbComic,
         getComic,
         ratingModel,
