@@ -1,15 +1,15 @@
-COMIC - APP
+**COMIC - APP**
 
 Application to search for comics and rate them
 
-LOCALHOST
+**LOCALHOST**
 
 First, we need to clone the app UI
 
 ```
 git clone https://github.com/johnb123-a/Comic-App-Vue.git
 ```
-Installation Quasar CLI
+**Installation Quasar CLI**
 
 You must install the Quasar UI framework
  
@@ -17,23 +17,23 @@ You must install the Quasar UI framework
 
 `$ yarn global add @quasar/cli`
 
-Installation Packages App UI
+**Installation Packages App UI**
 
 `$ npm install `
 
 `$ yarn `
 
-Deploy the app UI in a local environment
+**Deploy the app UI in a local environment**
 
 `$ quasar dev`
 
-Deploy Middleware
+**Deploy Middleware**
 
 `$ npm run dev`
 
 `$ yarn dev `
 
-App - Domain
+**App - Domain**
 
 Use this [link](https://aesthetic-melomakarona-41de76.netlify.app/#/) to view the application
 
@@ -41,13 +41,6 @@ Use this [link](https://aesthetic-melomakarona-41de76.netlify.app/#/) to view th
 
 ![](https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.png)
 ![](https://img.shields.io/badge/version-v0.0.1-blue)
-
-
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
 
 Package.json
 
