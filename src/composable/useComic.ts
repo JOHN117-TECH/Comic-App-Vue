@@ -7,6 +7,7 @@ const useComic = () => {
   return {
     getComic:              computed<ComicInterface>(() => store.getters['Comic/getComic']),
     getRatingValue:        computed<number>(() => store.getters['Comic/getRatingValue']),
+    getLoading:            computed<boolean>(() => store.getters['Comic/getLoading']),
     getComicData:          (numberComic:number) => store.dispatch('Comic/getComicData',numberComic),
     changeRatingValue:     (value:number) => store.commit('Comic/changeRatingValue',value),
   };

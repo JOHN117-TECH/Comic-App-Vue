@@ -6,10 +6,14 @@ import { ComicStateInterface } from './state';
 const actions: ActionTree<ComicStateInterface, StateInterface> = {
   getComicData: async(context, numberComic=1) => {
     try {
-      const resp =await api.get(`${numberComic}/info.0.json `)
+      context.commit('changeLoading')
+      const resp =await api.get(`${numberComic}`)
       const {data} = resp
       
-      resp.status === 200 && context.commit('addComic',data)
+      resp.status === 200 && (
+        context.commit('addComic',data),
+        setTimeout(() => {context.commit('changeLoading')},1000) 
+      )
       
     } catch (error) {
       console.error(error);

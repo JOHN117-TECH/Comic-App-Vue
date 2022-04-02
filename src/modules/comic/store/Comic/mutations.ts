@@ -8,6 +8,9 @@ const mutation: MutationTree<ComicStateInterface> = {
   },
   changeRatingValue(state: ComicStateInterface, value:number) {
     state.ratingValue = value
+  },
+  changeLoading(state: ComicStateInterface){
+   state.loadingComic = !state.loadingComic
   }
 
 };

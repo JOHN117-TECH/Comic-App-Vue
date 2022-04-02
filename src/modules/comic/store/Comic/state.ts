@@ -4,6 +4,7 @@ import { ComicInterface } from '../../components/models';
 export interface ComicStateInterface {
   comic: ComicInterface,
   ratingValue: number,
+  loadingComic: boolean,
 }
 
 function state(): ComicStateInterface {
@@ -21,7 +22,8 @@ function state(): ComicStateInterface {
       title:      '',
       day:        '',
     },
-    ratingValue:0
+    ratingValue:0,
+    loadingComic: false
   }
 }
 

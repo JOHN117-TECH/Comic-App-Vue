@@ -8,6 +8,9 @@ const getters: GetterTree<ComicStateInterface, StateInterface> = {
   },
   getRatingValue(context) {
     return context.ratingValue
+  },
+  getLoading(context) {
+    return context.loadingComic
   }
 };
 
