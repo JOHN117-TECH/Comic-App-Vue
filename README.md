@@ -33,11 +33,7 @@ You must install the Quasar UI framework
 
 `$ yarn dev `
 
-**App - Domain**
-
-Use this [link](https://aesthetic-melomakarona-41de76.netlify.app/#/) to view the application
-
-# Editor.md
+# ReadMD.md
 
 ![](https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.png)
 ![](https://img.shields.io/badge/version-v0.0.1-blue)
